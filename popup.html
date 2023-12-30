@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Now!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+        body{
+            width: 200px !important;
+            height: 50px !important; 
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(241, 245, 245) !important;
+            font-family: Roboto;
+        }
+        #weather-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+        #weatherIcon{
+           width: 50px;
+           height: 50px;
+           box-shadow: 0 5px 8px rgba(3, 49, 53, 0.8);
+           border-radius: 10px;
+           background-color: rgba(166, 239, 252, 0.856) !important;
+        }
+        #app-title{
+            color: white;
+            margin-bottom: 6px;
+            background-color: rgb(111, 88, 132);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .forcast {
+            display: inline;
+        }
+        #forcast-container{
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3 id="app-title">Weather Now!</h3>
+    <h4 id="weather-text" style="margin-bottom: 8px;"></h4>
+    <div id="weather-img">
+        <img id="weatherIcon" src="" alt="icon">
+    </div>
+    <div id="weather-container">
+        <p id="weatherCity" style="font-weight: 600;font-size: 15px;color:rgb(41, 40, 40); margin-bottom: 1px;"></p>
+        <p id="weatherTemp" style="font-weight: 700;font-size: 16px;color:rgb(36, 34, 34); margin-top:1px"></p>
+    </div>
+    <div id="forcast-container"></div>
+    <footer style="font-size: 9px;color: darkolivegreen;"><b>Developed by Hacene Benlazreg - 2023</b></footer>
+    <script src="popup.js"></script>
+</body>
+</html>
